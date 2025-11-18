@@ -8,6 +8,19 @@ A Model Context Protocol server for Azure AI Foundry, providing a unified set of
 
 [![Azure AI Community Discord](https://dcbadge.vercel.app/api/server/ByRwuEEgH4)](https://discord.gg/REmjGvvFpW)
 
+## Important notice
+
+MCP Server for Azure AI Foundry (experimental) has moved to the cloud, now as Foundry MCP Server (preview). Please check the official public documentation at [Get started with Foundry MCP Server (preview)](https://learn.microsoft.com/azure/ai-foundry/mcp/get-started?view=foundry&tabs=user). This GitHub repository contains the outdated information on the previous experimental server implementation, and will not be updated further. Instead, refer to the new, remotely hosted and managed Foundry MCP Server, that has the following benefits:
+
+- **Cloud-hosted interface for AI tool orchestration**: Foundry MCP Server (preview) provides a secure, scalable endpoint for MCP-compliant clients. You don't need to deploy infrastructure, enabling seamless integration and multi-agent scenarios.
+- **Identity and access control**: The server enforces authentication and authorization with Microsoft Entra ID. It performs all operations within the authenticated user's permissions (On-Behalf-Of flow).
+- **Scenario-focused, extensible tools**: The MCP Server exposes a growing set of tools for read and write operations on models, deployments, evaluations, and agents in [Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/what-is-azure-ai-foundry?view=foundry). The tools are extensible, letting developers and agents interact with services without knowing backend APIs or data schemas.
+- **Accelerated agent and developer productivity**: Natural language workflows (via MCP clients and large language models) enable rapid tool discovery and invocation, streamlining development and multi-agent orchestration.
+
+The rest of this repo (including codebase) explains the now-deprecated MCP Server that interactes with Azure AI Foundry (experimental).
+
+---
+
 ## Available Tools
 
 ### Capabilities: Models

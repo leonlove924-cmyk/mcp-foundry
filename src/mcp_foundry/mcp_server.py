@@ -1,5 +1,4 @@
 import importlib
-import importlib.util
 import os
 import logging
 import sys
